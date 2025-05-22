@@ -1,0 +1,186 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#6c6c6d;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    height: 90%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #055481;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar h2{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background: #1abc9c;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 270px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Top Bar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #055481;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.topbar h2{
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   color: #f4f4f4;
+}
+
+/* Search Box */
+.search-box {
+
+    margin-left: auto;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-btn {
+    padding: 8px 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.search-btn:hover {
+    background: #0056b3;
+}
+
+
+/* Order Section */
+.orders {
+    margin-top: 20px;
+}
+
+/* Order Heading */
+.order-heading {
+    color: #ffefef;
+    font-family: 'Franklin Gothic Medium';
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Order Table */
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffefef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.order-table th, .order-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-table th {
+    background: #f4f4f4;
+    font-weight: bold;
+}
+
+.order-table tr:hover {
+    background: #d4efff;
+}
+
+/* Order Status Colors */
+.status {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.status.shipped {
+    color: #007bff;
+}
+
+.status.processing {
+    color: #ff9800;
+}
+
+.status.delivered {
+    color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+    
+    .search-box {
+        width: 100%;
+    }
+    
+    .order-table th, .order-table td {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,172 @@
+/* Global Styles */
+html, body {
+    height: 100%;
+    overflow: hidden; /* Prevent whole page from scrolling */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Layout */
+.dashboard-container {
+    display: flex;
+    height: 100vh; /* Fill the screen */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #055481;
+    padding: 70px 20px 20px 20px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Ensure sidebar takes full height */
+    overflow: hidden; /* Sidebar not scrollable */
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #ecf0f1;
+    height: 100vh; /* Needed to constrain height */
+    overflow-y: auto; /* ✅ Only main content scrolls */
+}
+
+
+/* Sidebar Heading */
+.sidebar h2 {
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Sidebar Menu */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;         /* Center list items horizontally */
+}
+
+/* Sidebar Items */
+.sidebar ul li {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;     /* Center content inside li */
+}
+
+/* Menu Links */
+.sidebar ul li a {
+     font-family:Arial, Helvetica, sans-serif;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 4px;
+    text-align: center;
+    width: 100%;
+    max-width: 160px;            /* Keeps the buttons from stretching full width */
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #1abc9c;
+}
+
+
+/* Topbar */
+.topbar {
+    background-color: #055481;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+.topbar h2 {
+    margin: 0;
+    font-size: 24px;
+    color: aliceblue;
+}
+
+/* Orders Table */
+.orders {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    overflow-x: auto;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.orders-table th,
+.orders-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.orders-table th {
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+}
+
+.orders-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Confirm Button */
+.orders-table button {
+    padding: 6px 12px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.orders-table button:hover {
+    background-color: #1e8449;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .orders-table th,
+    .orders-table td {
+        padding: 8px 10px;
+    }
+}

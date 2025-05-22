@@ -1,0 +1,301 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6c6c6d;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color:#055481;
+    color: white;
+}
+
+.grav {
+    font-size: 50px;
+    font-weight: 50px;
+    font-family:'Trebuchet MS';
+    color: #ffefef;
+}
+
+.hash{
+    font-size: 20px;
+    font-weight: 50px;
+    font-family:'Poppins';
+    color: #ffefef;
+    padding-right: 150px;
+    font-weight: 50px;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.shop_now {
+    background-color: #ff6600;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    font-family: Poppins;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 20px 10px;
+    background: url('hero.jpg') center/cover no-repeat;
+    color: white;
+    
+}
+
+.h1{
+    font-size: 30px;
+}
+
+.hero-img{
+    height: 270px;
+    width: 270px;
+    border-radius: 150px;
+    top: 0px;
+    
+}
+
+.header-buttons {
+    display: flex;
+    gap: 15px; /* Adjust spacing between buttons */
+}
+
+.login, .become-supplier {
+    padding: 10px 20px;
+    background: #008CBA;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-align: center;
+    min-width: 150px; /* Ensures buttons have the same width */
+}
+
+.login:hover, .become-supplier:hover {
+    background: #005f7a;
+}
+
+
+#products{
+    font-family: Georgia;
+}
+
+.product p{
+    font-size: larger;
+}
+
+.products {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.product_text{
+    font-size:35px;
+    color: #ffefef;
+}
+
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.product {
+    margin-top: 10px;
+    background: rgb(236, 227, 227);
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 420px;
+    width: 250px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.product:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cart-btn1, .cart-btn2, .cart-btn3
+{
+padding: 10px ;
+background-color:  #ff6600;
+box-shadow:#ff6600;
+color: aliceblue;
+border-radius: 5px;
+
+}
+
+.about, .contact {
+    text-align: center;
+    padding: 50px 20px;
+    color:#ffefef;
+    font-family: Poppins;
+    font-size: large;
+}
+.about-img
+{
+    height: 270px;
+    width: 470px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.about-img:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact {
+    text-align: center;
+    padding: 40px 20px;
+    background: #ffefef;
+    border-top: 2px solid #ddd;
+}
+
+.contact h2 {
+    margin-left: 30px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: auto;
+    gap: 20px;
+}
+
+.contact-info {
+    text-align:left;
+    max-width: 400px;
+    font-size: 16px;
+    color: #555;
+    margin-left: 180px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-img {
+    margin-left: 15px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact-form button {
+    background:#05cf20;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background: #0deb2b;
+}
+
+.contact-img{
+    height: 100px;
+    width: 200px;
+    padding: right 10px;;
+}
+
+.submit{
+    margin-left: 50px;
+}
+
+.contact_us{
+    margin-left: 20px;
+    font-size: 50px;
+    font-family: Poppins;
+}
+
+.ars{
+    margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.become-supplier {
+    padding: 10px 20px;
+    background: #008CBA;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.become-supplier:hover {
+    background: #005f7a;
+}
+
